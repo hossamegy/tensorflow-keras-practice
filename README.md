@@ -6,7 +6,6 @@ This repository contains a collection of custom TensorFlow layers and models, as
 * Files
 * Models
 * Custom Layers
-* Examples
 * License
 * Overview
 
