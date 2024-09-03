@@ -18,7 +18,15 @@ This repository includes:
 * Various models including Residual Networks (ResNet), Simple Residual Networks, Wide and Deep models, and positional encoding for Transformers.
 
 ## **Files**
-### **1. tensor_operations.ipynb**
+
+### **1. NN_from_scratch.py**
+Includes a simple neural network implemented from scratch using NumPy. This file includes:
+
+* **FullyConnectedLayer:** Defines a fully connected layer with methods for forward propagation and activation functions.
+* **SequentialModel:** Implements a basic neural network model with methods for forward propagation, backward propagation, and training.
+* **Example Usage:** Generates test data and trains a simple neural network with the defined FullyConnectedLayer and SequentialModel.
+
+### **2. basic_tensors_tensorflow.ipynb**
 
 This Jupyter Notebook demonstrates various TensorFlow operations and tensor manipulations. It includes:
 
@@ -27,40 +35,44 @@ This Jupyter Notebook demonstrates various TensorFlow operations and tensor mani
 * **Conversion:** How to convert between NumPy arrays and TensorFlow tensors.
 * **Advanced Operations:** Using functions like tf.range, tf.fill, tf.eye, and tf.linalg.diag to perform more complex tensor operations.
 
-### **2. simple_custom_layer.py**
+### **3. customLayer.py**
 Contains a custom dense layer with trainable parameters and activation functions. This file includes:
 * SimpleCustomLayer: A custom layer that implements a dense layer with trainable weights and biases, and applies an activation function.
 
-### **3. dnn_residual_layer.py**
+### **4. dnnResidualLayer.py**
 Defines a custom dense residual layer for deep networks. This file includes:
 * **DNNResidualLayer:** A custom layer that applies a series of dense operations with residual connections.
 
-### **4. cnn_residual_layer.py**
+### **5. cnnResidualLayer.py**
 Defines a custom convolutional residual layer using TensorFlow. This file contains:
 
 * CNNResidualLayer: A custom layer that applies a series of convolutional operations with residual connections.
 
-### **5. simple_residual_net.py**
+### **6. simpleResidualNet.py**
 Defines a simple residual network combining custom CNN and DNN residual layers. This file includes:
 
 * **SimpleResidualNet:** A model that uses a combination of custom CNN and DNN residual layers, followed by a dense output layer.
-### **6. resnet_model.py**
+### **7. resNet.py**
 Implements a Residual Network (ResNet) model using TensorFlow. This file includes:
 
 * **IdentityBlock:** Defines an identity block with convolutional layers and batch normalization.
 * **ResNet:** Constructs a ResNet model with multiple identity blocks, global average pooling, and a final classification layer.
 
-### **7. wide_and_deep_model.py**
+### **8. wideAndDeepNet.py**
 Implements a Wide and Deep model that combines dense layers with multiple outputs. This file includes:
 
 * **WideAndDeepModel:** A model with separate hidden layers and auxiliary outputs, combining dense layers with concatenation.
 
-### **8. huber_loss.py**
+### **9. huber_custom_loss.py**
 Defines a custom Huber loss function for regression tasks. This file includes:
 
 * **huber_loss:** A function to compute Huber loss, which is robust to outliers and combines mean squared error with mean absolute error.
 
-### **9. positional_encoding.py**
+### **10. my_huber_loss.py**
+Defines a custom Huber loss function using TensorFlow. This file includes:
+
+* MyHuberLoss: A custom loss class derived from tf.keras.losses.Loss, implementing the Huber loss function.
+### **11. positional_encoding.py**
 Implements a positional encoding layer for Transformer models. This file includes:
 
 * **PositionalEncoding:** A custom layer that adds positional encoding to input tensors, helping models understand the order of sequences.
